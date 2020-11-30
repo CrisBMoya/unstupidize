@@ -33,8 +33,6 @@ function activate(context) {
 			selection_mod = selection_mod.replace(/(\{\n\s*")/gm, '{"');
 			selection_mod = selection_mod.replace(/(,\s*\})/gm, '}');
 			selection_mod = selection_mod.replace(/(\]\s*\])/gm, ']]');
-		
-			
 
 			// Clean and fix
 			editor.edit(editBuilder => {
